@@ -22,11 +22,6 @@ jobs:
     name: "CI Build"
     timeout-minutes: 1380
 
-    strategy:
-      fail-fast: false
-      matrix:
-        keymap: [default, via]
-
     container: ghcr.io/qmk/qmk_cli
 
     steps:
